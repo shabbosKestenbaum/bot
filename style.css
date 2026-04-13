@@ -31,14 +31,14 @@ a, a:active, a:visited, a:hover {
 }
 
 #contenedorGeneral {
-  max-width: 400px;          /* controls width */
-  margin: 60px auto;         /* centers it */
+  max-width: 400px;          
+  margin: 60px auto;         
   padding: 20px;
 
-  background-color: #2b2b2b; /* dark gray window */
-  border-radius: 12px;       /* smooth corners */
+  background-color: #2b2b2b; 
+  border-radius: 12px;       
 
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* glow/shadow */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); 
   
   text-align: center;
   
