@@ -31,8 +31,41 @@ a, a:active, a:visited, a:hover {
 }
 
 #contenedorGeneral {
-  margin: auto 1em;
+  max-width: 400px;          /* controls width */
+  margin: 60px auto;         /* centers it */
+  padding: 20px;
+
+  background-color: #2b2b2b; /* dark gray window */
+  border-radius: 12px;       /* smooth corners */
+
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7); /* glow/shadow */
+  
   text-align: center;
+  
+  box-shadow: 
+  0 0 25px rgba(0, 0, 0, 0.7),
+  inset 0 0 10px rgba(255, 255, 255, 0.05);
+
+  border: 1px solid #444;
+}
+
+
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 5px #ff66cc,
+      0 0 10px #ff66cc;
+  }
+  50% {
+    text-shadow:
+      0 0 20px #ff33aa,
+      0 0 40px #ff0099;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #ff66cc,
+      0 0 10px #ff66cc;
+  }
 }
 
 #tituloPagina {
@@ -42,6 +75,12 @@ a, a:active, a:visited, a:hover {
   font-family: "Comic Relief", system-ui;
   font-weight: 400;
   font-style: normal;
+    text-shadow:
+    0 0 5px #ff66cc,
+    0 0 10px #ff66cc,
+    0 0 20px #ff33aa,
+    0 0 40px #ff0099;
+    animation: glowPulse 2s infinite;
 }
 
 #tituloPagina:hover {
@@ -62,10 +101,43 @@ a, a:active, a:visited, a:hover {
 }
 
 #boton {
-  font-size: 0.9em;
-  background-color:  rgb(234, 134, 12);
-  color: rgb(0, 0, 0);
+  font-size: 1em;
+  padding: 10px 20px;
+
+  background-color: #ff9d00;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
   cursor: pointer;
+
+  box-shadow:
+    0 0 5px #ff6200,
+    0 0 10px #ffae00,
+    0 0 20px #ff9d00;
+
+  transition: all 0.2s ease;
+}
+
+#boton:hover {
+  background-color: #33ebff;
+
+  box-shadow:
+    0 0 10px #33ebff,
+    0 0 20px #00fbff,
+    0 0 40px #00e1ff;
+
+  transform: scale(1.05);
+}
+
+
+#boton:active {
+  transform: scale(0.95);
+
+  box-shadow:
+    0 0 5px #ff00aa,
+    inset 0 0 10px #000;
 }
 
 .imagen {
