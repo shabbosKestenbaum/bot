@@ -6,18 +6,23 @@ const listaCabezas = [
   "assets/rickcomic2.jpg",
   "assets/crossedface.png",
   "assets/ennis.png",
+  "assets/kregg.png",
 ];
 const listaTroncos = [
  "assets/connorbod.png",
   "assets/connorbod2.png",
   "assets/thraggbod.png",
   "assets/stanbod.png",
+  "assets/squirtlebod.png",
+  "assets/orbanbod.png",
 ];
 const listaPatas = [
   "assets/longlegs.png",
   "assets/atljeans.png",
   "assets/bug.png",
   "assets/horselegs.jpg",
+  "assets/bufflegs.png",
+  "assets/goatlegs.jpg",
 ];
 
 // Obtenemos los contenedores de las imágenes del HTML usando los IDs
