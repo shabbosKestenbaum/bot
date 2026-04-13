@@ -3,6 +3,7 @@ const listaCabezas = [
   "assets/billy.webp",
   "assets/eddie.jpg",
   "assets/martian.jpg",
+  "assets/rickcomic2.jpg"
 ];
 const listaTroncos = [
  "assets/connorbod.png",
